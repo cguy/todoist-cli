@@ -1,2 +1,3 @@
 # todoist-cli
-This is an UNOFFICIAL command line Todoist client
+
+This is an **UNOFFICIAL** command line Todoist client.
