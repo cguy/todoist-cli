@@ -20,7 +20,7 @@ func addLabel(name string) (*Label, error) {
 	token := savedToken.Token
 
 	// Generate some UUID to avoid duplicates
-	uuid.SwitchFormat(uuid.CleanHyphen)
+	uuid.SwitchFormat(uuid.FormatCanonical)
 	generatedUUID := uuid.NewV4().String()
 	tmpID := uuid.NewV4().String()
 

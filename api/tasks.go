@@ -26,7 +26,7 @@ func AddTask(taskContent string, projectOrder int, date string, rawLabels string
 	check(err)
 
 	// Generate some UUID to avoid duplicates
-	uuid.SwitchFormat(uuid.CleanHyphen)
+	uuid.SwitchFormat(uuid.FormatCanonical)
 	generatedUUID := uuid.NewV4().String()
 	tmpID := uuid.NewV4().String()
 
